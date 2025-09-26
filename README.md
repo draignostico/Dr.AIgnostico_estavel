@@ -2,17 +2,17 @@ Dr.AIgnostico
 
 Sistema de consulta e análise de documentos médicos usando RAG (Retrieval-Augmented Generation) com Python e embeddings.
 
- Requisitos
+Requisitos
 
 Antes de rodar o projeto, você precisa instalar:
 
 Python 3.11 ou 3.13
-Download Python
+https://www.python.org/ftp/python/3.11.7/python-3.11.7-amd64.exe
 
- Python 3.14 não é compatível por causa do ChromaDB.
+⚠️ Python 3.14 não é compatível por causa do ChromaDB.
 
 Ollama CLI
-Download Ollama
+https://ollama.com/download
 
 Verifique se o Python está funcionando:
 
@@ -28,11 +28,11 @@ Se estiver funcionando, você pode puxar um modelo, por exemplo:
 
 ollama pull llama3
 
-🔹 Passos para rodar o projeto
-1️⃣ Abrir o terminal e navegar até a pasta do projeto
+Passos para rodar o projeto
+1. Abrir o terminal e navegar até a pasta do projeto
 cd C:\xampp\htdocs\Dr.AIgnostico
 
-2️⃣ Criar e ativar o ambiente virtual dentro do backend
+2. Criar e ativar o ambiente virtual dentro do backend
 cd backend
 python -m venv venv
 venv\Scripts\Activate.ps1
@@ -42,19 +42,19 @@ venv\Scripts\Activate.ps1
 
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 
-3️⃣ Instalar dependências
+3. Instalar dependências
 pip install -r requirements.txt
 
-4️⃣ Gerar os embeddings (vetores) dos documentos
+4. Gerar os embeddings (vetores) dos documentos
 python vetorizador.py
 
 
 Sempre que adicionar ou alterar documentos dentro de backend\dados, rode este comando novamente.
 
-5️⃣ Rodar a aplicação
+5. Rodar a aplicação
 python run.py
 
-6️⃣ Acessar a aplicação
+6. Acessar a aplicação
 
 API (Swagger): http://127.0.0.1:5000/swagger
 
